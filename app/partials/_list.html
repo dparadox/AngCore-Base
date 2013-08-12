@@ -1,0 +1,44 @@
+﻿<div class="divContainerListView" ng-controller="Examp1Controller">
+    <div class="dContainerFilter">
+         <span>Name</span> <input type="text" data-ng-model="filterName" style="border:1px solid #007987" />
+    </div>
+    <br />
+   <div class="cssTableInfo" >
+    <table >
+        <tr>
+            <td > &nbsp;</td>
+            <td style="width:190px">Name </td>
+            <td >Ocupation</td>
+            <td>Location</td>
+            <td>Nationality</td>
+            <td>Email</td>
+             <td>Phone</td>
+        </tr>
+        <tr data-ng-repeat="con in contactList | filter:filterName">
+            <td >
+                {{ con.id }}
+            </td>
+            <td >
+                {{ con.name }}
+            </td>
+            <td>
+                {{ con.ocupation }}
+            </td>
+            <td>
+                {{ con.location }}
+            </td>    
+            <td>
+                {{ con.nationality }}
+            </td>
+            <td>
+                {{ con.email }}
+            </td>
+            <td>
+                {{ con.phone}}
+            </td>         
+        </tr>
+    </table>
+</div>
+</div>
+
+ 

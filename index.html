@@ -1,0 +1,61 @@
+<!doctype html>
+<html data-ng-app="myApp"><!-- Module Declaration - App -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>AngCore Base</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="app/style/css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,200,500' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="app/style/css/main.css">
+        <script src="app/libs/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body ng-cloak>
+    
+    
+    
+		<!-- THIS IS AN EXAMPLE -- REPLACE WITH YOUR APP-->
+        <div class="dMain">
+        	<div class="dContainerButtonsLeft clearfix">
+                <span><span class="txt-left">Show Information</span> <input type="checkbox" value=""  data-ng-model="obj.showViewInfo" /></span>
+                <span><span class="txt-left">Show Example</span> <input type="checkbox" value=""  data-ng-model="obj.showViewExample" /></span>
+           	</div>
+            <div data-ng-include src="'app/partials/_header.html'"></div>
+            <div data-ng-show="obj.showViewInfo" class="dContainerMainHeader" data-ng-include src="'app/partials/_information.html'"></div>
+            <div data-ng-show="obj.showViewExample" data-ng-view class="dContainerMain"></div>
+            </div>
+        <!-- THIS IS AN EXAMPLE -- REPLACE WITH YOUR APP-->
+        
+        
+        
+        
+        
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="app/libs/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="app/libs/js/plugins.js"></script>
+        <script src="app/libs/js/main.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        
+        
+        <!-- AngularJs Library DEV -->
+        <script src="app/libs/js/angular/angular.js"></script>
+        <!-- AngularJs Library PROD  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>  -->
+        
+        <!-- Core - Aplicattion -->
+        <script src="app/App.js"></script>
+        <script src="app/services/services.js"></script>
+        <script src="app/directives/directives.js"></script>
+        <script src="app/filter/filters.js"></script>
+        
+        <!-- Custom Factories -->
+        <script src="app/factories/Exampl1Factory.js"></script>
+        <!-- Custom Controllers -->
+        <script src="app/controllers/Examp1Controller.js"></script>  		 
+
+  
+        
+        <!-- AngCore Base -by- Esteban López -->
+    </body>
+</html>
